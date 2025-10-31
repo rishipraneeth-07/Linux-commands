@@ -1,0 +1,16 @@
+#!/bin/bash
+for ((i=1; i<=9; i++))
+do
+  # forward pattern
+  for ((j=1; j<=i; j++))
+  do
+    echo -n "$j"
+  done
+  echo -n "     "
+  # reverse pattern
+  for ((j=i; j>=1; j--))
+  do
+    echo -n "$j"
+  done
+  echo
+done
